@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/Hover/css/hover-min.css">
+    <link rel="stylesheet" href="vendor/fancybox-master/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>購物車清單 - Hello Spring</title>
+</head>
+
+<body class="cart">
+    <div w3-include-html="_nav.html"></div>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb rounded-0 justify-content-end">
+            <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+            <li class="breadcrumb-item"><a href="news.html">購物車</a></li>
+            <li class="breadcrumb-item active" aria-current="page">購物車清單</li>
+        </ol>
+    </nav>
+    <section>
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-12">
+                    <h1>購物車清單</h1>
+                    <table class="table cart-items stack-table">
+                        <colgroup>
+                            <col class="col1">
+                            <col class="col2">
+                            <col class="col3">
+                            <col class="col4">
+                            <col class="col5">
+                            <col class="col6">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>商品圖</th>
+                                <th>品名/規格</th>
+                                <th>單價</th>
+                                <th>數量</th>
+                                <th>合計</th>
+                                <th>刪除</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img class="img-fluid" src="images/img1.jpg" alt=""></td>
+                                <td>
+                                    <div class="prod-title">商品名稱商品名稱1</div>
+                                    <div class="prod-desc">商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹</div>
+                                </td>
+                                <td><span class="cell-label">單價:</span>$285</td>
+                                <td>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control input-qty" 
+                                            placeholder="數量" data-price="285" value="2" min="0">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-primary btn-change" type="button">
+                                                更改
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="cell-label">小計:</span>$<span class="subtot">70</span></td>
+                                <td><button class="btn btn-outline-primary btn-del" title="刪除"><i class="fas fa-trash"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-fluid" src="images/img1.jpg" alt=""></td>
+                                <td>
+                                    <div class="prod-title">商品名稱商品名稱2</div>
+                                    <div class="prod-desc">商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹</div>
+                                </td>
+                                <td><span class="cell-label">單價:</span>$185</td>
+                                <td>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control input-qty" 
+                                            placeholder="數量" value="2" data-price="185" min="0">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-primary btn-change" type="button">
+                                                更改
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="cell-label">小計:</span>$<span class="subtot">70</span></td>
+                                <td><button class="btn btn-outline-primary btn-del" title="刪除"><i class="fas fa-trash"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-fluid" src="images/img1.jpg" alt=""></td>
+                                <td>
+                                    <div class="prod-title">商品名稱商品名稱3</div>
+                                    <div class="prod-desc">商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹</div>
+                                </td>
+                                <td><span class="cell-label">單價:</span>$245</td>
+                                <td>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control input-qty" 
+                                            placeholder="數量" value="2" data-price="245" min="0">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-primary btn-change" type="button">
+                                                更改
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="cell-label">小計:</span>$<span class="subtot">70</span></td>
+                                <td><button class="btn btn-outline-primary btn-del" title="刪除"><i class="fas fa-trash"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-fluid" src="images/img1.jpg" alt=""></td>
+                                <td>
+                                    <div class="prod-title">商品名稱商品名稱4</div>
+                                    <div class="prod-desc">商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹</div>
+                                </td>
+                                <td><span class="cell-label">單價:</span>$485</td>
+                                <td>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control input-qty" 
+                                            placeholder="數量" value="2" data-price="485" min="0">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-primary btn-change" type="button">
+                                                更改
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="cell-label">小計:</span>$<span class="subtot">70</span></td>
+                                <td><button class="btn btn-outline-primary btn-del" title="刪除"><i class="fas fa-trash"></i></button></td>
+                            </tr>                           
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12 text-right alert alert-primary px-5">
+                    總計:$ <span class="total">2000</span>
+                </div>
+                <div class="col-8 pl-lg-5">
+                    <a href="prod1.html" class="btn btn-secondary">繼續購物</a>
+                    <a href="cart2.html" class="btn btn-primary">馬上結帳</a>
+                </div>
+                <div class="col-4 text-right pr-lg-5">
+                    <a href="#" class="btn btn-outline-secondary">清空購物車</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div w3-include-html="_footer.html"></div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="vendor/w3.js"></script>
+    <script>w3.includeHTML();</script>
+    <script src="vendor/jquery-3.5.1.min.js"></script>
+    <script src="vendor/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/js.cookie.min.js"></script>
+    <script src="vendor/fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(".input-qty").on("change keyup",change_qty_all);//兩事件共用函數
+        $(".btn-change").click(change_qty_all); //讓更改, 刪除共用一段程式
+        $(".btn-del").click(function(e){
+            let tr=$(this).parents("tr").eq(0); //抓到點選的那列資料(從自己祖先找到tr)
+            let input=tr.find(".input-qty");//在tr子孫中找到.input-qty
+            input.val(0);//數量清0
+            tr.remove();//移除列
+            change_qty_all();
+            if($("table.cart-items>tbody>tr").length==0){
+                alert("購物車己清空, 請重新選購");
+                window.location.href="prod1.html";
+            }
+        });
+        function change_qty_all(){//方法2 : 可算總價, 會全部算一次
+            let trs=$("table.cart-items>tbody>tr");
+            var tot=0;
+            trs.each(function(i,v){
+                let tr=$(v);
+                let input=tr.find(".input-qty");//在tr子孫中找到.input-qty
+                let subtot=tr.find(".subtot");//在tr子孫中找到.subtot
+                var n=parseInt(input.val())*parseInt(input.data("price"));//算出小計
+                subtot.text(n);//將小計放進.subtot
+                tot+=n;
+                //console.log(i,$(v));
+            });
+            $(".total").text(tot);
+            //console.log(trs);
+        }
+        change_qty_all();//頁面載入時, 全部重算一次
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!-- PHP, Asp.Net : 後端可在此將傳入資料, 存入SQL資料庫 -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/Hover/css/hover-min.css">
+    <link rel="stylesheet" href="vendor/fancybox-master/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>完成結帳 - Hello Spring</title>
+</head>
+
+<body class="cart">
+    <div w3-include-html="_nav.html"></div>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb rounded-0 justify-content-end">
+            <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+            <li class="breadcrumb-item"><a href="news.html">購物車</a></li>
+            <li class="breadcrumb-item active" aria-current="page">完成結帳</li>
+        </ol>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>完成結帳</h1>
+                    <table class="table cart-items stack-table">
+                        <colgroup>
+                            <col class="col1">
+                            <col class="col2">
+                            <col class="col3">
+                            <col class="col4">
+                            <col class="col5">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>商品圖</th>
+                                <th>品名/規格</th>
+                                <th>單價</th>
+                                <th>數量</th>
+                                <th>合計</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img class="img-fluid" src="images/img1.jpg" alt=""></td>
+                                <td>
+                                    <div class="prod-title">商品名稱商品名稱</div>
+                                    <div class="prod-desc">商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹</div>
+                                </td>
+                                <td><span class="cell-label">單價:</span>$285</td>
+                                <td><span class="cell-label">數量:</span>2</td>
+                                <td><span class="cell-label">小計:</span>$570</td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-fluid" src="images/img1.jpg" alt=""></td>
+                                <td>
+                                    <div class="prod-title">商品名稱商品名稱</div>
+                                    <div class="prod-desc">商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹</div>
+                                </td>
+                                <td><span class="cell-label">單價:</span>$285</td>
+                                <td><span class="cell-label">數量:</span>2</td>
+                                <td><span class="cell-label">小計:</span>$570</td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-fluid" src="images/img1.jpg" alt=""></td>
+                                <td>
+                                    <div class="prod-title">商品名稱商品名稱</div>
+                                    <div class="prod-desc">商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹</div>
+                                </td>
+                                <td><span class="cell-label">單價:</span>$285</td>
+                                <td><span class="cell-label">數量:</span>2</td>
+                                <td><span class="cell-label">小計:</span>$570</td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-fluid" src="images/img1.jpg" alt=""></td>
+                                <td>
+                                    <div class="prod-title">商品名稱商品名稱</div>
+                                    <div class="prod-desc">商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹商品介紹</div>
+                                </td>
+                                <td><span class="cell-label">單價:</span>$285</td>
+                                <td><span class="cell-label">數量:</span>2</td>
+                                <td><span class="cell-label">小計:</span>$570</td>
+                            </tr>                                                                               
+                        </tbody>
+                    </table>
+                    <div class="col-12 text-right alert alert-primary px-lg-5">
+                        <div>運費:$50</div>
+                        <div>總計:$2050</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-lg-2">
+                <div class="col-md-6">
+                    <div class="card border-primary mb-3">
+                        <div class="card-header">訂貨人資訊</div>
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">訂貨人:張大明 先生</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>電話:</strong>04-34567890</li>
+                                <li><strong>電子郵件:</strong>mymail@gmail.com</li>
+                                <li class="address"><strong>地址:</strong>台中市台中區台中路100號10樓之1</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-primary mb-3">
+                        <div class="card-header">收貨/物流資訊</div>
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">收貨人:張大明 先生</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>送貨電話:</strong>04-34567890</li>
+                                <li><strong>運送方式:</strong>宅配</li>
+                                <li class="address"><strong>送貨地址:</strong>台中市台中區台中路100號10樓之1</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-primary mb-3">
+                        <div class="card-header">金流/付款資訊</div>
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">付款方式:貨到付款</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>發票資訊:</strong>二聯式發票</li>
+                                <li><strong>統一編號:</strong>(無)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-primary mb-3">
+                        <div class="card-header">備註</div>
+                        <div class="card-body">
+                            <div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quos aliquid animi et laudantium? Recusandae molestiae officiis.
+                            </div>
+                        </div>
+                    </div>
+                </div>                   
+                <div class="col-12">
+                    <div class="card border-primary mb-3">
+                        <div class="card-header">注意事項</div>
+                        <div class="card-body">
+                            <ul>
+                                <li>本公司不會以電話要求您以ATM操作退款, 請小心詐騙</li>
+                                <li>到貨時間, 約為3~5天</li>
+                                <li>7天鑑賞期內請保持包裝完整</li>
+                                <li>其它問題: 請透過<a class="text-primary" href="tel:0498765432">電話</a> , 
+                                    或以<a class="text-primary" href="contact.html">連絡表單</a>洽詢</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div w3-include-html="_footer.html"></div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="vendor/w3.js"></script>
+    <script>w3.includeHTML();</script>
+    <script src="vendor/jquery-3.5.1.min.js"></script>
+    <script src="vendor/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/js.cookie.min.js"></script>
+    <script src="vendor/fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        //結帳完成, 資料清零
+        Cookies.set("cart",0);
+        setTimeout(function(){
+            $("ul.nav .cart").text(0);
+        },100);
+    </script>
+</body>
+
+</html>

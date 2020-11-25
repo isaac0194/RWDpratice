@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>模擬hover.css</h1>
+    <a href="#" class="btn btn-danger hover-sweep-to-right">
+        <span>HOVER</span> 
+    </a>
+    <style>
+        /*bootstrap*/
+        .btn{
+            background-color:#EEE;
+            color:#333;
+            text-decoration:none;
+            font-size:2em;
+            padding:.4em 1em;
+            border-radius:.4em;
+        }
+        .btn:hover{
+            background-color:#ccc;
+            color:#000;
+        }
+        .btn.btn-danger{
+            background-color:#FA0;
+        }
+        .btn.btn-danger:hover{
+            background-color:#FC0;
+        }
+        /*hover.css*/
+        .hover-sweep-to-right{
+            position:relative;
+            overflow: hidden;
+            transform: perspective(1px) translateZ(0);
+            transition: all .4s;
+        }
+        .hover-sweep-to-right>span{
+            position: relative;
+            z-index: 2;
+            transition: all .4s;
+        }
+        .hover-sweep-to-right::before{
+            content:" ";
+            background-color:#0BF;
+            /* display: block; */
+            position:absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            right:100%;
+            z-index: 0;
+            transition: all .4s;
+        }        
+        .hover-sweep-to-right:hover::before{
+            right:0;
+        }
+        /*自訂*/
+        .btn-danger.hover-sweep-to-right:hover{
+            color:#FFF;
+        }
+        .btn-danger.hover-sweep-to-right::before{
+            background-color: #b65200;
+            border-radius:.4em;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/Hover/css/hover-min.css">
+    <link rel="stylesheet" href="vendor/fancybox-master/dist/jquery.fancybox.min.css">
+<link rel="stylesheet" href="style.css">
+    <title>連絡我們 - Hello Spring</title>
+  </head>
+  <body class="contact">
+    <div w3-include-html="_nav.html"></div>
+    <div w3-include-html="_header.html"></div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb rounded-0 justify-content-end">
+          <li class="breadcrumb-item"><a href="#">首頁</a></li>
+          <li class="breadcrumb-item active" aria-current="page">連絡我們</li>
+      </ol>
+    </nav>    
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>連絡表單</h1>
+            <form action="#" method="POST">
+              <div class="form-group">
+                <label for="input1">留言主題</label>
+                <input type="text" class="form-control" id="input1" name="input1" 
+                  placeholder="請簡單說明您留言的主要目的">
+              </div>
+              <div class="form-group">
+                <label for="input2">產品系列</label>
+                <select class="form-control" name="input2" id="input2">
+                  <option value="1">產品系列1</option>
+                  <option value="2">產品系列2</option>
+                  <option value="3">產品系列3</option>
+                  <option value="4">產品系列4</option>
+                  <option value="5">產品系列5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="input3">指定回覆日</label>
+                <input type="date" class="form-control" id="input3" name="input3">
+              </div>
+              <div>需求種類(複選)</div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="input4" name="input4">
+                <label for="input4" class="form-check-label" >需求種類1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="input4b" name="input4b">
+                <label for="input4b" class="form-check-label" >需求種類2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="input4c" name="input4c">
+                <label for="input4c" class="form-check-label" >需求種類3</label>
+              </div>
+              <div>回覆方式(單選)</div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="input5" id="input5a" value="1">
+                <label class="form-check-label" for="input5a">電話</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="input5" id="input5b" value="2">
+                <label class="form-check-label" for="input5b">簡訊</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="input5" id="input5c" value="3">
+                <label class="form-check-label" for="input5c">EMAIL</label>
+              </div>
+              <div>消息來源(單選)</div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="input6" id="input6a" value="A">
+                <label class="form-check-label" for="input6a">官網</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="input6" id="input6b" value="B">
+                <label class="form-check-label" for="input6b">Facebook</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="input6" id="input6c" value="C">
+                <label class="form-check-label" for="input6c">Google搜尋</label>
+              </div>
+
+              <div class="form-group">
+                <label for="input1">留言內容</label>
+                <textarea name="memo" id="memo" rows="10" class="form-control" 
+                  placeholder="請詳細說明您留言的內容"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">送出</button>
+            </form>
+            <h2>Google 地圖</h2>
+            <h5>地圖連結</h5>
+            <div>
+              <a href="https://goo.gl/maps/NXF2Uqzh7hTT9D9D8">地圖連結</a>
+            </div>
+            <h5>地圖嵌入</h5>
+              <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14557.932449624186!2d120.72999557872241!3d24.189853993133507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1598441690384!5m2!1szh-TW!2stw"></iframe>
+              </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div>
+        <!-- 連絡我們
+        * 表單 (OK)
+        * 聯絡資訊
+        * 據點 : 圖片, 地圖, 列表 -->
+      </div>
+    </section>
+    <div w3-include-html="_footer.html"></div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="vendor/w3.js"></script>
+    <script>w3.includeHTML();</script>
+    <script src="vendor/jquery-3.5.1.min.js"></script>
+    <script src="vendor/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/js.cookie.min.js"></script>
+        <script src="vendor/fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

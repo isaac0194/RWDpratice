@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <style>
+        .yt-banner{
+            overflow: hidden;
+        }
+        .yt-banner .embed-responsive{
+            margin:-30% 0;
+            z-index: -1;
+            /*
+                因為影片內容: 10:4 (比16:9短)
+                故上下要裁掉60% -> 分兩半 : -30%
+
+                若為16:9-> 9/16=56.25%
+                上下要裁掉約: 22%
+
+                z-index:-1 : 將影片放到底下:使不能被點選
+                    (需搭配position)
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>youtube</h1>
+    <div class="container-fluild">
+        <div class="row">
+            <div class="col-12">
+                <div class="yt-banner">
+                    <div class="embed-responsive embed-responsive-1by1">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fqX65xS8KAg?controls=0&mute=1&autoplay=1&rel=0&loop=1&playlist=fqX65xS8KAg" 
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
